@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    /* background-color: blueviolet;
+    background-image: url("/3632e0408dff98f815b3c1ac019e242a.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    /* background-position-x: 0px;
+    background-position-y: 0px; */
+
+    /* background: red url(/3632e0408dff98f815b3c1ac019e242a.jpeg) no-repeat center center / cover; */
+    
+    background-color: aqua;
+    color: white;
+
+}
+
+.title {
+    /* background-color: purple; */
+    background-color: currentColor;
+    color: white;
+    color: #fefefe;
+    color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.5);
+    color: rgb(0 0 0 / 0.5);
+    color: hsl(0 0% 0% / 0.5);
+
+    border: 3px solid rgb(255, 255, 255);
+    border-color: blueviolet;
+}
+
+
+/*
+rgb
+red green blue
+0-255, 0-255, 0-255
+00-ff, 00-ff, 00-ff
+
+rgb(255, 255, 255)
+#ffffff
+
+hsl
+hue saturation lightness
+
+P3 Color Gamut
+
+ */
