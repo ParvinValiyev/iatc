@@ -1,37 +1,73 @@
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+@import url('./Roboto/font.css');
 
-    /* background-color: blueviolet;
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+
+  /* font-family: 'Roboto', sans-serif;  */
+  /* background-color: blueviolet;
     background-image: url("/3632e0408dff98f815b3c1ac019e242a.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
-    /* background-position-x: 0px;
+  /* background-position-x: 0px;
     background-position-y: 0px; */
 
-    /* background: red url(/3632e0408dff98f815b3c1ac019e242a.jpeg) no-repeat center center / cover; */
-    
-    background-color: aqua;
-    color: white;
+  /* background: red url(/3632e0408dff98f815b3c1ac019e242a.jpeg) no-repeat center center / cover; */
 
+  background-color: aqua;
+  color: white;
+
+  background-image: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+
+  background-image: conic-gradient(
+    from 0deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
 }
 
 .title {
-    /* background-color: purple; */
-    background-color: currentColor;
-    color: white;
-    color: #fefefe;
-    color: rgb(255, 255, 255);
-    color: rgba(0, 0, 0, 0.5);
-    color: rgb(0 0 0 / 0.5);
-    color: hsl(0 0% 0% / 0.5);
+  /* background-color: purple; */
+  background-color: currentColor;
+  color: white;
+  color: #fefefe;
+  color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.5);
+  color: rgb(0 0 0 / 0.5);
+  color: hsl(0 0% 0% / 0.5);
 
-    border: 3px solid rgb(255, 255, 255);
-    border-color: blueviolet;
+  border: 3px solid rgb(255, 255, 255);
+  border-color: blueviolet;
 }
-
 
 /*
 rgb
