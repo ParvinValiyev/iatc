@@ -69,6 +69,12 @@ body {
   border-color: blueviolet;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  font-style: italic;
+}
+
 /*
 rgb
 red green blue
@@ -84,3 +90,10 @@ hue saturation lightness
 P3 Color Gamut
 
  */
+
+ .box {
+   .class-1 {
+    font-size: 14px;
+   }
+
+ }
