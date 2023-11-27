@@ -1,0 +1,9 @@
+body {
+  background-color: black;
+  color: #ffffff;
+}
+
+header > .logo > a {
+    color: #72fdf5;
+    text-decoration: none;
+}
