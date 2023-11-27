@@ -1,6 +1,9 @@
+@import url('./fonts/style.css');
+
 body {
   background-color: black;
   color: #ffffff;
+  font-family: 'Neue Machina', sans-serif;
 }
 
 header > .logo > a {
