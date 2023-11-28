@@ -1,0 +1,16 @@
+.hero .content,
+.hero .gallery {
+    padding: 0 1rem;
+    text-align: center;
+    display: inline-block;
+    width: calc(50% - 91px);
+    margin: 44px;
+}
+
+.hero .content {
+    background-color: red;
+}
+
+.hero .gallery {
+    background-color: blue;
+}
