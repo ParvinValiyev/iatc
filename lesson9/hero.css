@@ -1,16 +1,40 @@
 .hero .content,
 .hero .gallery {
-    padding: 0 1rem;
     text-align: center;
     display: inline-block;
-    width: calc(50% - 91px);
-    margin: 44px;
+    width: calc(50% - 27px);
+    margin: 12px;
 }
 
 .hero .content {
-    background-color: red;
+    
 }
 
-.hero .gallery {
-    background-color: blue;
+.hero .content > h1 {
+    font-family: 'Sora';
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 82px;
+    letter-spacing: 0.06em;
+    color: var(--white-2);
+    margin-bottom: 72px;
+}
+
+.hero .content > form {
+    background-color: var(--white);
+    border-radius: 80px;
+    padding: 12px 20px;
+}
+
+.hero .content > form > input {
+    border: none;
+    width: 100%;
+}
+
+.hero .content > form > button {
+    padding: 16px 24px;
+    background-color: var(--black);
+    border-radius: 100px;
+    border: none;
+    color: var(--main);
 }
