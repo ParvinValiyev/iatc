@@ -83,22 +83,21 @@
 /* 1, 2 */
 .hero .gallery .wrapper:first-child,
 .hero .gallery .wrapper:nth-child(2) {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 .hero .gallery .wrapper:nth-child(3),
 .hero .gallery .wrapper:nth-child(4) {
-    margin-bottom: 12px;
-
+  margin-bottom: 12px;
 }
 
 .hero .gallery .wrapper:nth-child(1),
 .hero .gallery .wrapper:nth-child(3) {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 .hero .gallery .wrapper:nth-child(2),
 .hero .gallery .wrapper:nth-child(4) {
-    margin-left: 12px;
-}    
+  margin-left: 12px;
+}
 
 .hero .gallery .wrapper > img {
   width: 100%;
