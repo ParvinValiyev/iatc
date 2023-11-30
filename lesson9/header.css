@@ -1,5 +1,6 @@
 header {
     padding: 38px;
+    background-color: var(--black);
 }
 
 header > .logo > a {

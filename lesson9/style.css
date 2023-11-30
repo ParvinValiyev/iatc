@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #ffffff;
   color: #ffffff;
   font-family: "Neue Machina", sans-serif;
 }
@@ -30,4 +30,14 @@ button {
   height: 41px;
   width: 1px;
   background-color: var(--black-80);
+}
+
+.half-blood {
+  height: 20px;
+  position: absolute;
+}
+
+.half-blood .content {
+  position: absolute;
+  top: -105px;
 }
