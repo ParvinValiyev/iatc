@@ -1,0 +1,56 @@
+:root {
+  --violet: hsl(263, 55%, 52%);
+  --grayish-blue: hsl(217, 19%, 35%);
+  --blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+
+  font-size: 13px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+.testimonals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira ";
+  gap: 24px;
+  padding: 48px;
+
+  > article {
+    padding: 16px 12px;
+    border-radius: 8px;
+    background: var(--white);
+  }
+
+  > [data-name="daniel"] {
+    grid-area: daniel;
+    background: var(--violet)
+  }
+  > [data-name="jonathan"] {
+    grid-area: jonathan;
+    background: var(--grayish-blue)
+  }
+  > [data-name="jeanette"] {
+    grid-area: jeanette;
+    background: var(--white)
+  }
+  > [data-name="patrick"] {
+    grid-area: patrick;
+    background: var(--blackish-blue)
+  }
+  > [data-name="kira"] {
+    grid-area: kira;
+    background: var(--white)
+  }
+}
