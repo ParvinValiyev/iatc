@@ -3,6 +3,8 @@
   --grayish-blue: hsl(217, 19%, 35%);
   --blackish-blue: hsl(219, 29%, 14%);
   --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
 
   font-size: 13px;
 }
@@ -15,9 +17,12 @@ body {
   margin: 0;
   padding: 0;
   background-color: #333;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .testimonals {
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -27,8 +32,22 @@ body {
   gap: 24px;
   padding: 48px;
 
+  @media screen and (max-width:1440px)  {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "daniel daniel jonathan "
+      "jeanette patrick patrick "
+      "kira kira kira";
+    gap: 20px;
+    /* padding: 48px; */
+  }
+
   > article {
-    padding: 16px 12px;
+    padding: 32px 24px;
     border-radius: 8px;
     background: var(--white);
 
@@ -49,25 +68,42 @@ body {
       > h3 {
         margin: 0 0 2px 0;
         align-self: flex-end;
+        font-weight: 600;
       }
 
       > p {
         margin: 2px 0 0 0;
         align-self: flex-start;
+        font-weight: 500;
       }
 
+    }
+
+    > .body {
+      > h3 {
+        font-weight: 600;
+        letter-spacing: 1.08px;
+
+      }
+
+      > p {
+        font-weight: 500;
+      }
     }
   }
 
   > [data-name="daniel"] {
     grid-area: daniel;
-    background: var(--violet);
-    color: var(--white);
+    background-color: var(--violet);
+    color: var(--light-grayish-blue);
+    background-image: url('./images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat ;
+    background-position-x: 80%;
   }
   > [data-name="jonathan"] {
     grid-area: jonathan;
     background: var(--grayish-blue);
-    color: var(--white);
+    color: var(--light-grayish-blue);
   }
   > [data-name="jeanette"] {
     grid-area: jeanette;
@@ -77,11 +113,30 @@ body {
   > [data-name="patrick"] {
     grid-area: patrick;
     background: var(--blackish-blue);
-    color: var(--white);
+    color: var(--light-grayish-blue);
   }
   > [data-name="kira"] {
     grid-area: kira;
     background: var(--white);
     color: var(--blackish-blue);
   }
+}
+
+@media screen and (max-width:760px)  {
+  .testimonals{
+    max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: unset;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "daniel"
+    "jonathan"
+    "jeanette"
+    "patrick"
+    "kira";
+  gap: 20px;
+  /* padding: 48px; */
+  }
+  
 }
