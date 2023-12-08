@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+
+
+
+.grid {
+    display: grid;
+    height: 100vh;
+
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.box {
+    background-color: rebeccapurple;
+    border: 1px solid red;
+    padding: 1em;
+}
