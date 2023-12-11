@@ -1,11 +1,16 @@
 .layout {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+  grid-template-columns: minmax(300px, 400px) minmax(700px, 1fr);
+  grid-template-rows: 100px 1fr 100px;
   grid-template-areas:
     "aside header header header"
     "aside main main main"
     "aside footer footer footer";
+   /* grid-gap: 10px; 
+   gap: 10px;
+   row-gap: 10px;
+   column-gap: 50px; */
 }
 
 header {
