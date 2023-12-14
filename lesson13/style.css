@@ -78,27 +78,24 @@ header {
   }
 }
 
-
 /* // Mobile, Tablet, Desktop */
 
 @media screen and (max-width: 500px) {
-    header {
-        background-color: red;
-    }
-    
+  header {
+    background-color: red;
+  }
 }
 
 @media print {
-    header {
-        /* display: none; */
-        background-color: red;
-    }
+  header {
+    /* display: none; */
+    background-color: red;
+  }
 }
-    
 
 @media (max-width: 800px) {
   header {
-    grid-template-columns: 150px 1fr max-content ;
+    grid-template-columns: 150px 1fr max-content;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "logo _ actions"
