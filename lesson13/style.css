@@ -58,12 +58,13 @@ header {
     background-color: red;
     transition: all 0.2s ease-in-out;
   }
-  
+
   > input[type="checkbox"]:checked ~ .slider {
     left: 0;
   }
 
-  > input[type="checkbox"]:checked ~ nav, > input[type="checkbox"]:checked ~ .actions {
+  > input[type="checkbox"]:checked ~ nav,
+  > input[type="checkbox"]:checked ~ .actions {
     display: block;
     position: absolute;
     top: 50%;
@@ -83,8 +84,6 @@ header {
   > input[type="checkbox"]:checked ~ .actions {
     top: unset;
     bottom: 0;
-
-    
   }
 
   .logo {
@@ -119,7 +118,6 @@ header {
     display: flex;
     gap: 20px;
   }
-
 }
 
 /* // Mobile, Tablet, Desktop */
