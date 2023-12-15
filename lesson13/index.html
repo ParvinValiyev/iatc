@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3afb555c98.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="container">
@@ -14,6 +18,20 @@
           alt="Google Logo"
         />
       </div>
+      
+      <label for="slider" class="btn btn-secondary">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <input
+        aria-hidden="true"
+        type="checkbox"
+        style="display: none"
+        id="slider"
+      />
+
+      <div class="slider"></div>
+      
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -26,6 +44,7 @@
         <button class="btn btn-primary">Sign Up</button>
         <button class="btn btn-secondary">Log In</button>
       </div>
+
     </header>
   </body>
 </html>
