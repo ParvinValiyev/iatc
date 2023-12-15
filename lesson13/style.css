@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-html body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -44,6 +45,48 @@ header {
   grid-template-columns: minmax(159px, 200px) minmax(max-content, 1fr) max-content;
   align-items: center;
   gap: 20px;
+  /* position: relative; */
+
+  & .slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -110%;
+    width: 100%;
+    filter: blur(5px);
+    z-index: -1;
+    background-color: red;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  > input[type="checkbox"]:checked ~ .slider {
+    left: 0;
+  }
+
+  > input[type="checkbox"]:checked ~ nav, > input[type="checkbox"]:checked ~ .actions {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  > input[type="checkbox"]:checked ~ nav > ul {
+    flex-direction: column;
+    gap: 20px;
+
+    > li > a {
+      font-size: 2rem;
+    }
+  }
+
+  > input[type="checkbox"]:checked ~ .actions {
+    top: unset;
+    bottom: 0;
+
+    
+  }
+
   .logo {
     > img {
       width: 100%;
@@ -67,7 +110,7 @@ header {
       transition: all 0.2s ease-in-out;
 
       &:hover {
-        color: red;
+        color: rgb(28, 65, 80);
       }
     }
   }
@@ -76,14 +119,15 @@ header {
     display: flex;
     gap: 20px;
   }
+
 }
 
 /* // Mobile, Tablet, Desktop */
 
 @media screen and (max-width: 500px) {
-  header {
+  /* header {
     background-color: red;
-  }
+  } */
 }
 
 @media print {
@@ -93,24 +137,33 @@ header {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 996px) {
   header {
     grid-template-columns: 150px 1fr max-content;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "logo _ actions"
-      "nav nav nav";
+    grid-template-columns: max-content 1fr 150px;
 
-    .logo {
-      grid-area: logo;
+    > .logo {
+      grid-column: 3 / 4;
     }
-
     > nav {
-      grid-area: nav;
+      display: none;
     }
 
     > .actions {
-      grid-area: actions;
+      display: none;
+    }
+
+    > .btn {
+      grid-column: 1 / 2;
+      order: -1;
+    }
+  }
+}
+
+@media (min-width: 997px) {
+  header {
+    > .btn {
+      display: none;
     }
   }
 }
