@@ -59,6 +59,10 @@ header {
     transition: all 0.2s ease-in-out;
   }
 
+  > input[type="checkbox"]{
+    display: none;
+  }
+
   > input[type="checkbox"]:checked ~ .slider {
     left: 0;
   }
