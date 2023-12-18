@@ -1,0 +1,21 @@
+
+@mixin flex ($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
+
+@mixin flex-center () {
+    @include flex;    
+}
+
+@mixin flex-bottom () {
+    @include flex (flex-end,flex-end);    
+}
+
+@mixin flex-top () {
+    @include flex(flex-start,flex-start);    
+}
