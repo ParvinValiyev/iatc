@@ -1,5 +1,7 @@
 @use "variables";
 @use "functions";
+@use 'mixins';
+@import 'placeholders';
 
 @each $color, $value in variables.$colors {
   .color-#{$color} {
@@ -7,9 +9,25 @@
   }
 }
 
+
 .display {
   @extend .color-secondary;
   font-weight: 700;
+}
+
+.text {
+  @extend %text;
+  @extend .color-secondary;
+}
+
+.box {
+  // @include mixins.flex-center;
+  // @include mixins.flex-bottom;
+  @include mixins.flex-top;
+
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
 }
 
 @each $index, $size in variables.$display-sizes {

@@ -1,8 +1,14 @@
+.text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
 .color-primary {
   color: rgb(62, 255, 146);
 }
 
-.color-secondary, .display, .display-3, .display-2, .display-1 {
+.color-secondary, .text, .display, .display-3, .display-2, .display-1 {
   color: rgb(47, 73, 47);
 }
 
@@ -16,6 +22,15 @@
 
 .display, .display-3, .display-2, .display-1 {
   font-weight: 700;
+}
+
+.box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
 }
 
 .display-1 {
