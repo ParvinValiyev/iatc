@@ -18,6 +18,15 @@
   font-weight: 700;
 }
 
+.box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+}
+
 .display-1 {
   font-size: 3.4375rem;
 }
