@@ -1,0 +1,20 @@
+@use "variables";
+@use "functions";
+
+@each $color, $value in variables.$colors {
+  .color-#{$color} {
+    color: $value;
+  }
+}
+
+.display {
+  @extend .color-secondary;
+  font-weight: 700;
+}
+
+@each $index, $size in variables.$display-sizes {
+    .display-#{$index} {
+        @extend .display;
+        font-size: functions.get-rem($size);
+    } 
+}
