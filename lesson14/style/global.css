@@ -23,6 +23,11 @@
 .display, .display-3, .display-2, .display-1 {
   font-weight: 700;
 }
+@media screen and (max-width: 500px) {
+  .display, .display-3, .display-2, .display-1 {
+    font-size: 1.25rem;
+  }
+}
 
 .box {
   display: flex;

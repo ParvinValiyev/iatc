@@ -1,7 +1,9 @@
 @use "variables";
 @use "functions";
 @use 'mixins';
+@use 'media';
 @import 'placeholders';
+
 
 @each $color, $value in variables.$colors {
   .color-#{$color} {
@@ -13,6 +15,19 @@
 .display {
   @extend .color-secondary;
   font-weight: 700;
+
+  // @include mixins.for-mobile {
+  //   font-size: functions.get-rem(15px);
+  // }
+  
+  // @include mixins.for-screen(media.$phone) {
+  //   font-size: functions.get-rem(20px);
+  // }
+
+  @include mixins.for-strict-screen(media.$phone) {
+    font-size: functions.get-rem(20px);
+  }
+
 }
 
 .text {
