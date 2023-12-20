@@ -8,7 +8,12 @@
   color: rgb(62, 255, 146);
 }
 
-.color-secondary, .text, .display, .display-3, .display-2, .display-1 {
+.color-secondary,
+.text,
+.display,
+.display-3,
+.display-2,
+.display-1 {
   color: rgb(47, 73, 47);
 }
 
@@ -20,11 +25,17 @@
   color: rgb(255, 255, 255);
 }
 
-.display, .display-3, .display-2, .display-1 {
+.display,
+.display-3,
+.display-2,
+.display-1 {
   font-weight: 700;
 }
 @media screen and (max-width: 500px) {
-  .display, .display-3, .display-2, .display-1 {
+  .display,
+  .display-3,
+  .display-2,
+  .display-1 {
     font-size: 1.25rem;
   }
 }
@@ -48,4 +59,4 @@
 
 .display-3 {
   font-size: 2.1875rem;
-}/*# sourceMappingURL=global.css.map */
+} /*# sourceMappingURL=global.css.map */

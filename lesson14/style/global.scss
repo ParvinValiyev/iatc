@@ -1,16 +1,14 @@
 @use "variables";
 @use "functions";
-@use 'mixins';
-@use 'media';
-@import 'placeholders';
-
+@use "mixins";
+@use "media";
+@import "placeholders";
 
 @each $color, $value in variables.$colors {
   .color-#{$color} {
     color: $value;
   }
 }
-
 
 .display {
   @extend .color-secondary;
@@ -19,7 +17,7 @@
   // @include mixins.for-mobile {
   //   font-size: functions.get-rem(15px);
   // }
-  
+
   // @include mixins.for-screen(media.$phone) {
   //   font-size: functions.get-rem(20px);
   // }
@@ -27,7 +25,6 @@
   @include mixins.for-strict-screen(media.$phone) {
     font-size: functions.get-rem(20px);
   }
-
 }
 
 .text {
@@ -46,8 +43,8 @@
 }
 
 @each $index, $size in variables.$display-sizes {
-    .display-#{$index} {
-        @extend .display;
-        font-size: functions.get-rem($size);
-    } 
+  .display-#{$index} {
+    @extend .display;
+    font-size: functions.get-rem($size);
+  }
 }
