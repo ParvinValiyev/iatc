@@ -1,0 +1,59 @@
+p::first-letter {
+    /* -webkit-initial-letter: 1.5; */
+    initial-letter: 1.5;
+    /* font-size: 2em; */
+
+}
+
+p {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* white-space: nowrap; */
+
+    /* 3 lines to show  */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    block-size: 100px;
+    inline-size: 100px;
+}
+
+
+img {
+    /* -webkit-mask-image: url('mask.png') ; */
+    mask-image: url('mask.png');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+
+    /* for opera */
+    -o-object-fit: contain;
+
+    /* for mozilla firefox  */
+    -moz-object-fit: contain;
+    /* css engine: gecko */
+
+    /* for internet explorer */
+    -ms-object-fit: contain;
+
+    /* for google chrome & safari */
+    -webkit-object-kit: contain;
+
+    /* webkit -> safari */
+
+    /* blink -> chrome */
+
+    /* webkit prefixes work on: safari, chrome, edge, opera, yandex */
+
+    object-fit: contain;
+}
